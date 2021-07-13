@@ -1,0 +1,121 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 232px;
+    background-color: white;
+    transform: translate(100%);
+    transition: transform 0.5s;
+    height: 764px;
+}
+
+.header__name {
+    padding-left: 33px;
+}
+
+.header__list {
+    padding-bottom: 11px;
+}
+
+.list__name {
+    color: #F16D7F;
+    margin: 0;
+    padding-left: 33px;
+}
+
+.header__catalog {
+    display: flex;
+    flex-direction: column;
+    padding-left: 54px;
+    padding-top: 20px;
+}
+
+.header__menu.active {
+    transform: translateX(0);
+}
+
+.header__burger {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.header__burger span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.header__burger span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.header__burger span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+.header__burger.active span:first-of-type {
+    transform: translateX(100%);
+}
+
+.header__burger.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header__burger.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header__button {
+    height: 29px;
+    width: 29px;
+    border: 0;
+    cursor: pointer;
+}
+
+.header__button--person {
+    background-image: url('../img/person.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-left: 20px;
+    vertical-align: text-bottom;
+}
+
+.header__button--cart {
+    background-image: url('../img/cart.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-left: 42px;
+    vertical-align: text-bottom;
+}
+
+.header__button--search {
+    background-image: url('../img/search.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-left: 42px;
+}

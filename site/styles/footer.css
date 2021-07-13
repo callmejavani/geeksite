@@ -1,0 +1,61 @@
+.footer {
+    background-color: #222224;
+    height: 70px;
+    margin-top: -17px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text {
+    color: white;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footer__items {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.footer__items:last-child {
+    padding-right: 0;
+}
+
+.footer__link--fb,
+.footer__link--inst,
+.footer__link--p,
+.footer__link--twitter {
+    display: inline-block;
+    background: url('../img/sprite.png') no-repeat;
+    background-color: white;
+}
+
+.footer__link--fb {
+    background-position: 0px 0px;
+    width: 35px;
+    height: 30px;
+}
+
+.footer__link--inst {
+    background-position: -71px 2px;
+    width: 30px;
+    height: 35px;
+}
+
+.footer__link--p {
+    background-position: -37px -3px;
+    width: 30px;
+    height: 25px;
+}
+
+.footer__link--twitter {
+    background-position: -107px -2px;
+    width: 25px;
+    height: 25px;
+}

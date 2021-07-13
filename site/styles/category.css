@@ -1,0 +1,55 @@
+.category {
+    margin-top: 20px;
+}
+
+.category__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.category__name {
+    color: #F16D7F;
+}
+
+.category__discription {
+    color: white;
+}
+
+.category__cards {
+    width: 100%;
+    height: 260px;
+    background: black;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.9);
+}
+
+.category__cards--women {
+    background-image: url('../img/women.png');
+    background-repeat: no-repeat;
+}
+
+.category__cards--men {
+    background-image: url('../img/men.png');
+    background-repeat: no-repeat;
+}
+
+.category__cards--kids {
+    background-image: url('../img/kids.png');
+    background-repeat: no-repeat;
+}
+
+.category__cards--accesories {
+    background-image: url('../img/accesories.png');
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.category__cards:not(:last-child) {
+    width: 353px;
+    margin: 0 0 20px 0;
+}
+
+.category__content {
+    text-align: center;
+    padding-top: 75px;
+}

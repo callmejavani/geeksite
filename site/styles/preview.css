@@ -1,0 +1,25 @@
+.preview {
+    height: 764px;
+    background-color: #F1E4E6;
+}
+
+.preview__container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('../img/photo.png');
+    background-repeat: no-repeat;
+    background-position: -212px bottom;
+
+}
+
+.preview__name {
+    max-width: 377px;
+    padding-left: 20px;
+    border-left: 5px solid #F16D7F;
+}
+
+.preview__decor {
+    color: #F16D7F;
+}

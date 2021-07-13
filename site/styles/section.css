@@ -1,0 +1,9 @@
+.section {
+    background-color: #F8F3F4;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section__name {
+    color: #F16D7F;
+}
